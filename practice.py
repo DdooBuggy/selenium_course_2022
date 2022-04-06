@@ -12,4 +12,8 @@ class hello:
         self.count -= 1
         self.print_hello()
 
-hello("hi", 10).print_hello()
+# hello("hi", 10).print_hello()
+
+text = "https://nomadcoder.co/name/code?32joifj903sdf"
+split_text = text.split("/")
+print(split_text[2])
