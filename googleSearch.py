@@ -8,7 +8,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 
     # options
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless') # 창을 띄우지 않는 옵션. 왜 이걸 해야만 실행되는지...
+# power shell option
+chrome_options.binary_location = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
+# WSL2 옵션.
+# chrome_options.add_argument('--headless') 
 
 #------------------------------------------------------------
 class GoogleKeywordScreenshooter:
